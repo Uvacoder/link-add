@@ -1,13 +1,70 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+
+html,body,#root{
+    font-family: 'Roboto', sans-serif;
+    @apply flex items-center justify-center text-[#353535] font-normal bg-gray-100 w-full h-full;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.app{
+    @apply  rounded-xl relative overflow-hidden bg-white drop-shadow-md;
+    width:calc(100% - 260px);
+    height:calc(100% - 100px);
+}
+.nav{
+     @apply fixed w-[85px] rounded-tl-xl rounded-bl-xl border-r border-r-gray-50 h-full flex flex-col items-center;
+}
+
+.header{
+    @apply flex items-center justify-between h-24 px-8 border-b border-gray-50; 
+}
+
+.header .line{
+    @apply bg-gray-200 w-[1px] h-[40px] mx-6
+}
+
+.left-nav-menu{
+    @apply flex items-center justify-center flex-col mt-8 gap-y-5;
+}
+.left-nav-menu span{
+    @apply text-[23px] p-3 rounded-xl text-gray-400 font-light transition-all cursor-pointer;
+}
+
+.left-nav-menu span:hover{
+    @apply text-brand-color;
+}
+.left-nav-menu span.active{
+    @apply bg-brand-color bg-opacity-10 text-brand-color;
+}
+
+input.g-text{
+    @apply outline-none border-2 rounded-xl relative h-14 bg-transparent px-4
+}
+
+.flag-selector-inner{
+    @apply flex flex-col;
+}
+.flag-selector-inner > div img{
+    @apply w-8 h-6 object-contain rounded-md;
+}
+.flag-selector-inner > div{
+    @apply flex items-center p-2 gap-x-4 cursor-pointer select-none text-gray-900 transition-all ;
+}
+.flag-selector-inner > div:hover{
+    @apply bg-gray-100 bg-opacity-60;
+}
+
+.select-input{
+    @apply flex items-center gap-x-3 border-2 rounded-lg px-3 h-11 w-40 justify-between;
+}
+.select-input img{
+    @apply w-8 rounded-lg
+}
+
+.vote-btn{
+    @apply p-1 border rounded;
 }

@@ -1,0 +1,16 @@
+{
+    "turkish":"Turkish",
+    "english":"English",
+    "vote":"Vote",
+    "lowest-first":"Lowest First",
+    "highest-first":"Highest First",
+    "all-my-links":"All My Links",
+    "new-link-add":"Add New Link",
+    "delete-confirm":"Are you sure you want to delete?",
+    "yes":"Yes",
+    "successfully-deleted":"Successfully Deleted",
+    "data-not-found":"Data Not Found",
+    "please-add-url": "Please add a URL",
+    "save":"Save",
+    "successfuly-added":"Successfuly Added"
+}

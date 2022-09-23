@@ -1,0 +1,16 @@
+{
+    "turkish":"Türkçe",
+    "english":"İngilizce",
+    "vote":"Oy",
+    "lowest-first":"Önce en düşük",
+    "highest-first":"Önce en yüksek",
+    "all-my-links":"Tüm Linklerim",
+    "new-link-add":"Yeni Link Ekle",
+    "delete-confirm":"Silmek istediğinize emin misiniz?",
+    "yes":"Evet",
+    "successfully-deleted":"Başarıyla Silindi",
+    "data-not-found":"Veri Bulunamadı",
+    "please-add-url":"Lütfen bir URL ekleyin",
+    "save":"Kaydet",
+    "successfuly-added":"Başarıyla Eklendi"
+}
